@@ -12,44 +12,4 @@ This repository contains the implementation of a linked list (LinkedList) in C++
 6. **IsEmpty:** Checks if the linked list is empty.
 7. **Concat:** Concatenates two linked lists.
 
-## Example Usage
-
-Here's a simple example of using the LinkedList:
-
-```cpp
-LinkedList<int> SLL;
-
-// Inserting elements
-SLL.Insert(1, 10);
-SLL.Insert(2, 20);
-SLL.Insert(3, 30);
-
-// Displaying elements
-SLL.Display();
-
-// Deleting elements
-SLL.Delete(1, x);
-SLL.Delete(1, x);
-
-// Finding elements
-if(SLL.Find(1, x)) {
-    cout << "Element found: " << x << endl;
-} else {
-    cout << "Element not found!" << endl;
-}
-
-// Searching elements
-cout << "Element found at position: " << SLL.Search(30) << endl;
-
-// Checking if the list is empty
-if(SLL.IsEmpty()) {
-    cout << "The list is empty!" << endl;
-} else {
-    cout << "The list is not empty!" << endl;
-}
-
-// Concatenating lists
-LinkedList<int> a, b, c;
-a.Insert(1, 1);
-b.Insert(1, 6);
-c.Concat(&a, &b);
+###This README.md provides an overview of the available operations on LinkedList and how to use them. You can use this format as a template to document other data structures that will be implemented in the future.
