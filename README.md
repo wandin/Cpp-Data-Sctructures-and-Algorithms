@@ -94,6 +94,9 @@ Below are the operations performed on the LinkedList:
 5. **Display:** Displays all elements of the linked list.
 6. **IsEmpty:** Checks if the linked list is empty.
 7. **Concat:** Concatenates two linked lists.
+8. **Merge:** Merges two linkedList by rearranging Node pointers.
+9. **Reverse a LinkedList using a Temp Array** Self explanatory 😂
+10. **Reverse a LinkedList:** Reverses a LinkedList by rearranging Node pointers.
 
 
 
