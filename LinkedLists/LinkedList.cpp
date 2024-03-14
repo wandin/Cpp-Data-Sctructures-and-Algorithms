@@ -1,4 +1,6 @@
 // SINGLY LINKED LIST - ADT - abstract data type
+// Templated to work with various data types, providing flexibility and reusability.
+
 
 #include <iostream>
 
@@ -21,7 +23,7 @@ class LinkedList
 private:
 	
 	Node<T> *first, *last;
-	int len;
+	int length;
 	
 public:
 		
@@ -49,7 +51,7 @@ LinkedList<T>::LinkedList()
 {
 	first = NULL;
 	last = NULL;
-	len = 0;
+	length = 0;
 }
 
 
@@ -61,7 +63,7 @@ void LinkedList<T>::Insert(int pos, T Element)
 	
 	temp->Data = Element;
 	temp->link = NULL;
-	if(len == 0)
+	if(length == 0)
 	{
 		first = last = temp; // first and second node are equal to our temp node, as we only have 1 Node at this point(Node *temp)
 	}
@@ -72,7 +74,7 @@ void LinkedList<T>::Insert(int pos, T Element)
 			temp->link = first; // if we already have one node, we assign the link of first node to temp.
 			first = temp;		// now first is temp.
 		}
-		else if(pos == len+1)	// INSERTING ON LAST POSITION 
+		else if(pos == length+1)	// INSERTING ON LAST POSITION 
 		{
 			last->link = temp;	//transfer the link of the last node to temp. 
 			last = temp;		// now last is temp.
@@ -88,7 +90,7 @@ void LinkedList<T>::Insert(int pos, T Element)
 			p->link = temp;
 		}
 	}
-	len++;
+	length++;
 }
 
 /* DELETE */
@@ -98,7 +100,7 @@ void LinkedList<T>::Delete(int pos, T &Element)
 	Node<T> *p, *nodeToBeDeleted;	// Pointers p and q initially set to the first node of the list
 	p = nodeToBeDeleted = first;
 	
-	if(len == 0)				// check list empty
+	if(length == 0)				// check list empty
 	{
 		cout<<"List is Empty"<<endl;
 		return;
@@ -113,7 +115,7 @@ void LinkedList<T>::Delete(int pos, T &Element)
 		nodeToBeDeleted = first;
 		first = first->link;	// Update the first pointer to point to the next node
 	}
-	else if(pos == len)			// if pos == len we are at the last node
+	else if(pos == length)			// if pos == len we are at the last node
 	{
 		for (int i = i <= pos -2; i++;)	// Traverse the list to the node before the last node
 		{
@@ -134,7 +136,7 @@ void LinkedList<T>::Delete(int pos, T &Element)
 	}
 	Element = nodeToBeDeleted->Data;
 	delete nodeToBeDeleted;
-	len--;
+	length--;
 }
 
 
@@ -144,7 +146,7 @@ bool LinkedList<T>::Find(int pos, T &Element)
 {
 	Node<T> *p = first;
 	
-	if(pos < 1 || pos > len) // if position is before first, or after last, doesn`t exist
+	if(pos < 1 || pos > length) // if position is before first, or after last, doesn`t exist
 	{
 		return false;
 	}
@@ -164,7 +166,7 @@ int LinkedList<T>::Search(T Element)
 {
 	Node<T> *p = first;
 
-	for (int i = 1; i <= len; i++)
+	for (int i = 1; i <= length; i++)
 	{
 		if(p->Data == Element)
 		{
@@ -288,7 +290,7 @@ void LinkedList<T>::ReverseUsingArray()
 	Node<T> *p = first;     // Pointer p points to the first node of the LinkedList
 	Node<T> *q = first;     // Pointer q points to the first node of the LinkedList
 	T *temp;                // Temporary array to store data while reversing
-	temp = new T[len];      // Allocate memory for the temporary array
+	temp = new T[length];      // Allocate memory for the temporary array
 	int i = 0;              // Initialize an index variable for the temporary array
 
 	// Traverse the LinkedList and store its elements in the temporary array
