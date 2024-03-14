@@ -99,5 +99,21 @@ Below are the operations performed on the LinkedList:
 10. **Reverse a LinkedList:** Reverses a LinkedList by rearranging Node pointers.
 
 
+## Circular LinkedLists (LinkedList folder)
+
+Below are the operations performed on the Circular LinkedList:
+
+1. **Constructor**.
+2. **Destructor**.
+3. **Insert** Inserts an element at a specific position in the Circular linked list.
+4. **Delete** Deletes an element from a specific position in the Circular Linked List.
+5. **Find** Finds an element at a specific position in the Circular Linked List.
+6. **Search** Searches for an element in the Circular Linked List and returns its position.
+7. **Display** Displays all elements of the Circular Linked List.
+8. **Display Using Recursion**. Displays all elements of the Circular Linked List using recursion.
+9. **Length** Returns the length of the Circular Linked List.
+10. **IsEmpty** Checks if the Circular Linked List is empty, returns a bool.
+
+
 
 **@TODO:** - more data structures to be added. 
