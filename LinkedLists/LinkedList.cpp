@@ -30,18 +30,23 @@ public:
 	LinkedList();
 	~LinkedList(){};
 	
-	void Insert(int, T);
-	void Delete(int, T&);
-	bool Find(int, T&);
-	int Search(T);
-	void Display();
-	int Length();
-	bool IsEmpty();
-	bool IsFull(); 		// is full is not mandatory in LinkedList, since we can always insert new elements to a LinkedList, but sometimes we might not have enough memory in our machine for the allocation, then might be useful.
-	void Concat(LinkedList<T> *a, LinkedList<T> *b);
-	void Merge(LinkedList<T> *a, LinkedList<T> *b); // *a = first LinkedList, *b = second LinkedList
-	void ReverseUsingArray();
-	void ReverseByRearrangingPointers();
+	// Default constructor and destructor
+	LinkedList();
+	~LinkedList(){};
+	
+	void Insert(int, T);	// Function to insert a new node at a specified position	
+	void Delete(int, T&);	// Function to delete a node at a specified position
+	bool Find(int, T&);		// Function to find the data at a specified position
+	int Search(T);			// Function to search for a given data in the linked list
+	void Display();			// Function to display the elements of the linked list
+	int Length();			// Function to return the length of the linked list
+	bool IsEmpty();			// Function to check if the linked list is empty
+	bool IsFull(); 			// Function to check if the linked list is full (not necessary for linked lists)
+	void Concat(LinkedList<T> *a, LinkedList<T> *b);	// Function to concatenate two linked lists
+	void Merge(LinkedList<T> *a, LinkedList<T> *b);		// Function to merge two sorted linked lists
+	void ReverseUsingArray();				// Function to reverse the linked list using a temporary array
+	void ReverseByRearrangingPointers();	// Function to reverse the linked list by rearranging pointers
+
 
 };
 
