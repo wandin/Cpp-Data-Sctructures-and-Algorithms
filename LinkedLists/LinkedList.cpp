@@ -26,9 +26,6 @@ private:
 	int length;
 	
 public:
-		
-	LinkedList();
-	~LinkedList(){};
 	
 	// Default constructor and destructor
 	LinkedList();
@@ -351,6 +348,14 @@ int main()
 	SLL.Insert(1, 100); 
 	SLL.Display();// displaying inserted elements
 	
+	if(SLL.Find(1, x))		// check if we find something with given parameters
+	{
+		cout<<"Element found, true! Element is"<< x <<endl;
+	}
+	else
+	{
+		cout<<"Element not found!"<<endl;
+	}
 	
 	// deleting
 	SLL.Delete(1,x);
@@ -364,14 +369,7 @@ int main()
 	SLL.Display(); // displaying after delete an element
 
 	
-	if(SLL.Find(1, x))		// check if we find something with given parameters
-	{
-		cout<<"Element found, true! Element is"<< x<<endl;
-	}
-	else
-	{
-		cout<<"Element not found!"<<endl;
-	}
+
 	
 	cout<<"Search found: "<<SLL.Search(50)<<endl;
 	
