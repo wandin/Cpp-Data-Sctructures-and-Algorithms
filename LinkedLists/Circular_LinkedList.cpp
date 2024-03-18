@@ -36,13 +36,13 @@ public:
 	CircularLinkedList();
 	~CircularLinkedList();
 	
-	void Insert(int, T);
-	void Delete(int, T&);
-	bool Find(int, T&);
-	int Search(T);
-	void Display();
-	int Length();
-	bool isEmpty();	
+	void Insert(int, T);    // Method to insert an element into the circular linked list at a specified position
+	void Delete(int, T&);   // Method to delete an element from the circular linked list at a specified position
+	bool Find(int, T&); 	// Method to find an element at a specified position in the circular linked list, Returns true if the element is found, false otherwise
+	int Search(T);    		// Method to search for an element in the circular linked list, Returns the position of the element if found, -1 otherwise
+	void Display();    		// Method to display the elements of the circular linked list
+	int Length();    		// Method to return the length of the circular linked list
+	bool isEmpty();	    	// Method to check if the circular linked list is empty, Returns true if the circular linked list is empty, false otherwise
 	
 };
 
@@ -182,14 +182,36 @@ void CircularLinkedList<T>::Delete(int pos, T& Element)
 template<class T>
 bool CircularLinkedList<T>::Find(int pos, T &Element)
 {
+	Node<T> *p = first;
 	
+	if(pos < 1 || pos > length) // if position is before first, or after last, doesn`t exist
+	{
+		return false;
+	}
+							// else we loop through
+	for (int i = 1; i < pos; i++)
+	{
+		p = p->link;
+	}
+	Element = p->Data;
+	return true;
 }
 
 /* SEARCH */
 template<class T>
 int CircularLinkedList<T>::Search(T Element)
 {
-	
+	Node<T> *p = first;
+
+	for (int i = 1; i <= length; i++)
+	{
+		if(p->Data == Element)
+		{
+			return i;
+		}
+		p = p->link;
+	}
+	return -1;
 }
 
 /* DISPLAY LINKED LIST*/ 
@@ -211,14 +233,14 @@ void CircularLinkedList<T>::Display()
 template<class T>
 int CircularLinkedList<T>::Length()
 {
-	
+	return length;
 }
 
 /* RETURN IF LINKED LIST IS EMPTY */ 
 template<class T>
 bool CircularLinkedList<T>::isEmpty()
 {
-	
+	return first == NULL;
 }
 
 main()
@@ -227,13 +249,13 @@ main()
 	
 	// INSERTING
 	cout<<"\n**Insert Method"<<endl;
-	CLL.Insert(1, 1); 	// 1st pos
-	CLL.Insert(2, 2);	// 2nd pos
-	CLL.Insert(3, 3);	// 3rd pos
-	CLL.Insert(4, 4);	// 4th pos
-	CLL.Insert(5, 5);	// 5th pos
-	CLL.Insert(5, 6);	// 6th pos
-	CLL.Insert(1, 0); 	// here we are inserting (0) in 1st position again, so the previous value (1) in 1st position becomes the 2nd position. 
+	CLL.Insert(1, 100); 	// 1st pos
+	CLL.Insert(2, 200);	// 2nd pos
+	CLL.Insert(3, 300);	// 3rd pos
+	CLL.Insert(4, 400);	// 4th pos
+	CLL.Insert(5, 500);	// 5th pos
+	CLL.Insert(5, 600);	// 6th pos
+	CLL.Insert(1, 10); 	// here we are inserting (0) in 1st position again, so the previous value (1) in 1st position becomes the 2nd position. 
 	CLL.Display();		// output = 0->1->2->3->4->6->5->	// USING THE NORMAL ITERATIVE DISPLAY METHOD
 	cout<<"-------------------"<<endl;
 	//END OF INSERTING//
@@ -248,4 +270,60 @@ main()
 	CLL.Display();				// output = 1->2->3->4->6->5->
 	cout<<"-------------------"<<endl;
 	//END OF DELETING
+	
+	
+	// FIND//
+	cout<<"\n**Find Method"<<endl;
+	int tobeFound;
+	if(CLL.Find(1, tobeFound))		// check if we find something with the given parameters
+	{
+		cout<<"Element found, true! Element is "<< tobeFound<<endl;
+	}
+	else
+	{
+		cout<<"Element not found!"<<endl;
+	}
+	cout<<"-------------------"<<endl;
+	// END OF FIND
+	
+	
+	// SEARCH METHOD
+	cout<<"\n**Search Method"<<endl;
+	int tobeSearched = 200;
+	int position = CLL.Search(tobeSearched);
+	if(position > -1)
+	{
+		cout << "Successful Search at position: "<<CLL.Search(tobeSearched)<<endl;
+	}
+	else
+	{
+		cout<<"SEARCH NOT SUCCESFUL!"<<endl;
+	}
+	cout<<"-------------------"<<endl;
+	// END OF SEARCH
+	
+	
+	// LENGTH METHOD
+	cout<<"\n**Lenght Method"<<endl;
+	int listLength = CLL.Length();
+	cout <<"Length is: "<<listLength<<endl;
+	cout<<"-------------------"<<endl;
+	// END OF LENGTH
+
+	
+	// Is EMPTY METHOD
+	cout<<"\n**IsEmpty Method"<<endl;
+	int result = CLL.isEmpty();
+	if(result == 0)
+	{	
+		cout<<"NOT EMPTY! "<<endl;
+	}
+	else
+	{
+		cout<<"EMPTY INDEED!"<<endl;
+	}
+	cout<<"-------------------"<<endl;
+	// END OF EMPTY
+
+
 };
