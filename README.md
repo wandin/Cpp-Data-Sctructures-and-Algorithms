@@ -115,5 +115,19 @@ Below are the operations performed on the Circular LinkedList:
 10. **IsEmpty** Checks if the Circular Linked List is empty, returns a bool.
 
 
+## Doubly LinkedLists (LinkedList folder)
+
+Below are the operations performed on the Doubly LinkedList:
+
+1. **Constructor**.
+2. **Destructor**.
+3. **Insert** Inserts an element at a specific position in the Doubly linked list.
+4. **Delete** Deletes an element from a specific position in the Doubly Linked List.
+5. **Find** Finds an element at a specific position in the Doubly Linked List.
+6. **Search** Searches for an element in the Doubly Linked List and returns its position.
+7. **Length** Returns the length of the Doubly Linked List.
+8. **IsEmpty** Checks if the Doubly Linked List is empty, returns a bool.
+9. **Display** Displays all elements of the Doubly Linked List.
+
 
 **@TODO:** - more data structures to be added. 
