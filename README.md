@@ -153,5 +153,18 @@ Simple demonstration of using 2 stacks with a single array.
 3. **Display** Displays all elements of each Stack.
 4. **TopMost** Returns the element at top position in each stack.
 
+## Stack using Linked Representation (LinkedList) (Stack folder)
+Below are the operations performed on the Stack using a Linked Implementation:
+
+1. **Constructor**.
+2. **Destructor**.
+3. **Push** Inserts an element at the Stack.
+4. **Pop** Deletes an element from the Stack.
+5. **Find** Retrieve the element at a given position in the Stack.
+6. **Search** Find the position of a given element in the stack.
+7. **Length** Returns the length of the Stack.
+8. **IsEmpty** Checks if the Stack is empty, returns a bool.
+9. **IsFull** Checks if the Stack is full, returns a bool.
+10. **Display** Displays all elements of the Stack.
 
 **@TODO:** - more data structures to be added. 
