@@ -116,23 +116,51 @@ void Queue<T>::Display()
 
 int main()
 {
-	Queue<char> qq(10);
-	
-	char x;
-	qq.Enqueue('A');
+	Queue<char> qq(10);		 // create new object of Queue type.
+	char x;					// declaration of x to be used in some operations. 
+
+	/* Enqueue Elements*/
+	qq.Enqueue('A');			// Enqueue Elements
 	qq.Enqueue('B');
 	qq.Enqueue('C');
 	qq.Enqueue('D');
 	qq.Enqueue('E');
-	
-	qq.Display();
+	qq.Display();				// Display Enqueued Elements 
 	cout <<"-------------------------"<<endl;
+	/* End of Enqueue*/
 	
+	/* Dequeue an Element */
 	qq.Dequeue(x);
-	qq.Display();
-	cout<<"\nDeleted element is: "<<x<<endl;
+	cout<<"\nDeleted element is: "<<x<<endl;	// Show what element was Dequeued;
+	qq.Display();								// Display Queue after dequeuing an element
 	cout <<"-------------------------"<<endl;
-
+	/*End of Dequeue */
+	
+	
+	/* Find */
+	if(qq.Find(2, x))				// Check if we find an element at given position. 
+	{
+		cout<<"\nElement found at given position position!!"<<endl;	// confirm we found an element
+		
+		/* Search Element */
+		qq.Search(x);												// Search the given element
+		cout<<"\nSearched Element at position 2: "<<x<<endl;						// Print the given element
+		cout <<"-------------------------"<<endl;
+		/* End of Search */
+	}
+	else
+	{
+		cout<<"Element not found!"<<endl;
+	}
+	
+	// Print the Length
+	cout<<"Length of queue is: "<<qq.Length()<<endl;
+	
+	//Isfull
+	cout<<"Queue is Full? "<<qq.isFull()<<endl;
+	
+	//IsEmpty
+	cout<<"Queue is Empty? "<<qq.isEmpty()<<endl;
 	
 	return 0;
 };
