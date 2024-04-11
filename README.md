@@ -168,7 +168,7 @@ Below are the operations performed on the Stack using a Linked Implementation:
 10. **Display** Displays all elements of the Stack.
 
 ## Queue (Queue folder)
-Below are the operations performed on the Stack using a Linked Implementation:
+Below are the operations performed on a Queue:
 
 1. **Constructor**.
 2. **Destructor**.
@@ -182,7 +182,7 @@ Below are the operations performed on the Stack using a Linked Implementation:
 10. **Display** Displays all elements of the Queue.
 
 ## CircularQueue (Queue folder)
-Below are the operations performed on the Stack using a Linked Implementation:
+Below are the operations performed on a CircularQueue:
 
 1. **Constructor**.
 2. **Destructor**.
