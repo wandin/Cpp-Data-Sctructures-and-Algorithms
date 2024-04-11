@@ -181,4 +181,24 @@ Below are the operations performed on the Stack using a Linked Implementation:
 9. **IsFull** Checks if the Queue is full, returns a bool.
 10. **Display** Displays all elements of the Queue.
 
+## CircularQueue (Queue folder)
+Below are the operations performed on the Stack using a Linked Implementation:
+
+1. **Constructor**.
+2. **Destructor**.
+3. **EnQueue** Inserts an element at the Queue.
+4. **DeQueue** Deletes an element from the Queue.
+5. **FrontElement** Retrieve the Front element, index 0.
+6. **RearElement** Retrieve the Rear element, last element inserted.
+7. **Length** Returns the length of the Queue.
+8. **IsEmpty** Checks if the Queue is empty, returns a bool.
+9. **IsFull** Checks if the Queue is full, returns a bool.
+10. **Display** Displays all elements of the Queue.
+
+
+
+
+
+
+
 **@TODO:** - more data structures to be added. 
