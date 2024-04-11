@@ -167,4 +167,18 @@ Below are the operations performed on the Stack using a Linked Implementation:
 9. **IsFull** Checks if the Stack is full, returns a bool.
 10. **Display** Displays all elements of the Stack.
 
+## Queue (Queue folder)
+Below are the operations performed on the Stack using a Linked Implementation:
+
+1. **Constructor**.
+2. **Destructor**.
+3. **EnQueue** Inserts an element at the Queue.
+4. **DeQueue** Deletes an element from the Queue.
+5. **Find** Retrieve the element at a given position in the Queue.
+6. **Search** Find the position of a given element in the Queue.
+7. **Length** Returns the length of the Queue.
+8. **IsEmpty** Checks if the Queue is empty, returns a bool.
+9. **IsFull** Checks if the Queue is full, returns a bool.
+10. **Display** Displays all elements of the Queue.
+
 **@TODO:** - more data structures to be added. 
