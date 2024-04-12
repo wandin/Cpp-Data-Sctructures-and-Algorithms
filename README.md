@@ -195,9 +195,44 @@ Below are the operations performed on a CircularQueue:
 9. **IsFull** Checks if the Queue is full, returns a bool.
 10. **Display** Displays all elements of the Queue.
 
+## LinkedQueue (Queue folder)
+Below are the operations performed on a Linked Queue:
+
+1. **Constructor**.
+2. **Destructor**.
+3. **EnQueue** Inserts an element at the Queue.
+4. **DeQueue** Deletes an element from the Queue.
+5. **FrontMost** Retrieve the Front element, index 0.
+6. **RearMost** Retrieve the Rear element, last element inserted.
+7. **Length** Returns the length of the Queue.
+8. **IsEmpty** Checks if the Queue is empty, returns a bool.
+10. **Display** Displays all elements of the Queue.
 
 
+## DoubleEndedQueue (Queue folder)
+Below are the operations performed on a DoubleEnded Queue:
 
+1. **Constructor**.
+2. **Destructor**.
+3. **InsertFromFront** Inserts an element at the Queue.
+4. **InsertFromRear** Deletes an element from the Queue.
+5. **DeleteFromFront** Deletes an element from the Front indicator in the Queue.
+6. **DeleteFromRear** Deletes an element from the Rear indicator in the Queue.
+7. **getFront** Retrieve the Front element, index 0.
+8. **getRear** Retrieve the Rear element, last element inserted.
+9. **isFull** Checks if the Queue is Full, returns a bool.
+10. **IsEmpty** Checks if the Queue is empty, returns a bool.
+11. **Display** Displays all elements of the Queue.
+
+
+## QueueUsingStack (Queue folder)
+Below are the operations performed on a QueueUsingStack:
+
+-- Two Stacks used to manipulate data.
+
+1. **Constructor**.
+2. **Enqueue** Enqueues using 2 stacks to operate
+3. **DeQueue** Dequeues using 2 stacks to operate
 
 
 
