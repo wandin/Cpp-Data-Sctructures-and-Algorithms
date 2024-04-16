@@ -21,7 +21,7 @@ class BinaryTree
 	
 public:
 	Node<T> *Root;
-	BinaryTree() { Root = NULL; }
+	BinaryTree() { Root = nullptr; }
 	
 	Node<T> *newNode(T);
 	void TraverseInOrder(Node<T> *);
@@ -37,8 +37,8 @@ Node<T> * BinaryTree<T>::newNode(T Data)
 {
 	Root = new Node<T>;
 	Root->Data = Data;
-	Root->Left = NULL;
-	Root->Right = NULL;
+	Root->Left = nullptr;
+	Root->Right = nullptr;
 	return(Root);
 }
 
@@ -56,7 +56,7 @@ void BinaryTree<T>::TraverseInOrder(Node<T> *temp)
 template<class T>
 void BinaryTree<T>::TraversePreOrder(Node<T> *temp)
 {
-	if(temp != NULL)
+	if(temp != nullptr)
 	{
 		cout<<" "<<temp->Data;
 		TraversePreOrder(temp->Left);
@@ -67,7 +67,7 @@ void BinaryTree<T>::TraversePreOrder(Node<T> *temp)
 template<class T>
 void BinaryTree<T>::TraversePostOrder(Node<T> *temp)
 {
-	if(temp != NULL)
+	if(temp != nullptr)
 	{
 		TraversePostOrder(temp->Left);
 		TraversePostOrder(temp->Right);
@@ -119,7 +119,7 @@ int BinaryTree<T>::getHeight(Node<T> *p)
 {
 	int l = 0;
 	int r = 0;
-	if(p == NULL) return 0;
+	if(p == nullptr) return 0;
 	
 	l = getHeight(p->Left);
 	r = getHeight(p->Right);
