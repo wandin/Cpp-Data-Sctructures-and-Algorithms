@@ -285,4 +285,18 @@ Below are the operations performed on a Binary Tree:
 9. **getRoot**. Return the Root value
 
 
+## Binary Search Tree (SearchTree folder)
+Below are the operations performed on a Binary Search Tree:
+**A basic Dictionary approach, Insert, Delete, Search. Using a binary Tree**
+
+1. **Constructor**. initializes Root to nullptr
+2. **GetRootElement**. Getter for Root element
+3. **Insert**. Function to insert a key into the tree
+4. **InOrder**. Function to perform in-order traversal
+5. **Search**. Function to search for a key in the tree
+6. **Delete**. Function to delete a key from the tree
+7. **InOrderPred**. Function to find the in-order predecessor of a node
+8. **InOrderSucc**. Function to find the in-order successor of a node
+9. **getHeight**. Function to get the height of the tree
+
 **@TODO:** - more data structures to be added.
