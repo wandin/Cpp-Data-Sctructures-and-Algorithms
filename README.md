@@ -236,7 +236,7 @@ Below are the operations performed on a QueueUsingStack:
 
 
 
- ## Binary Tree (BinaryTree folder)
+ ## Binary Tree using Stack (BinaryTree folder)
 These are the basic properties of Binary Trees
 
 Lets consider:
@@ -269,5 +269,20 @@ Below are the operations performed on a Binary Tree:
 6. **getHeight**. We print the Height of Tree, Height is also known as Depth.
 
 
+## Binary Tree using Queue (BinaryTree folder)
+Below are the operations performed on a Binary Tree:
+-- **We are using a Queue to perform Iterative Methods**
 
-**@TODO:** - more data structures to be added. 
+
+1. **Constructor**. Constructing the BinaryTree - setting the Root as nullptr
+2. **CreateTree**.
+3. **TraverseInOrder**. We Traverse the Tree in the order: LeftSubTree->Root->RightSubTree in a Recursive Method
+4. **TraversePreOrder**. We Traverse the Tree in the order: Root->LeftSubTree->RightSubTree in a Recursive Method
+5. **TraversePostOrder**. We Traverse the Tree in the order: LeftSubTree->RightSubTree->Root in a Recursive Method
+6. **TraverseLevelOrder**. We Traverse the Tree in a Level Order also known as (breadth-first traversal)
+7. **getHeight**. We print the Height of Tree, Height is also known as Depth.
+8. **Node Count**. Return the amount of nodes in the Tree.
+9. **getRoot**. Return the Root value
+
+
+**@TODO:** - more data structures to be added.
