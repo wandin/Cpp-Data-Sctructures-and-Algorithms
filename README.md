@@ -299,4 +299,21 @@ Below are the operations performed on a Binary Search Tree:
 8. **InOrderSucc**. Function to find the in-order successor of a node
 9. **getHeight**. Function to get the height of the tree
 
-**@TODO:** - more data structures to be added.
+
+## AVL Tree (AVL_Tree folder)
+Below are the operations performed on the AVL Tree:
+**Auto Balancing/Rotating Tree**
+
+1. **Constructor**. initializes Root to nullptr
+2. **getRoot**. Getter for Root element
+3. **Insert**. Function to insert a key into the tree
+4. **InOrder**. Function to perform in-order traversal
+9. **getHeight**. Function to get the height of the tree
+10. **LLRotation**. Left-Left Rotation function for balancing the Tree while Inserting Elements
+11. **RRRotation**. Right-Right Rotation function for balancing the Tree while Inserting Elements
+12. **LRRotation**. Left-Right Rotation function for balancing the Tree while Inserting Elements
+13.	**RLRotation**. Right-Left Rotation function for balancing the Tree while Inserting Elements
+
+
+
+**@TODO:** - more data structures to be added 
