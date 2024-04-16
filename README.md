@@ -236,4 +236,36 @@ Below are the operations performed on a QueueUsingStack:
 
 
 
+ ## Binary Tree (Trees folder)
+These are the basic properties of Binary Trees
+
+Lets consider:
+(*n*) as the number of nodes in the tree.
+(*h*) the height of the Tree.
+
+1. For any given Tree(*T*) with *n* nodes there is exactly  (*n-1*) edges
+2. For any given Tree(*T*) with Height *h* there are at least (*h+1*) nodes, and atmost $2^{(h+1)}$ -1 nodes
+3. For any given Tree(*T*) with *n* nodes the minimum heigh is -> $\log_2^{(n+1)}$ - 1 and maximum height(*h*) of -> (*n-1*)
+
+4.**Only for Complete Binary Trees**
+
+4.1. Let (*i*) be the position for any node(Element) in an Array then
+	a node's Left-child exists at 2x*i* position and if 2x*i* > n, then no Left-child exists for that Node
+4.2. A node's Right-Child exists at 2x*i*+1 position and if 2x*i*+1 > *n* then no Right-Child exists for that node.
+4.3. A node's parent exists at (*i*/2) position and if *i* then no parent exists (it's the Root node)
+
+5. At each Height the max number of Nodes(*n*) is equals to -> $2^{\text{(h))}}-1$ -->
+
+Below are the operations performed on a DoubleEnded Queue:
+1. **Constructor**. Constructing the BinaryTree - setting the Root as NULL
+2. **newNode**. Set the Root Node and child Nodes
+3. **TraverseInOrder**. We Traverse the Tree in the order: LeftSubTree->Root->RightSubTree in a Recursive Method
+3.1. **IterativeTraverseInOrder**. We Traverse the Tree in the order: LeftSubTree->Root->RightSubTree but using an iterative method instead of Recursive
+4. **TraversePreOrder**. We Traverse the Tree in the order: Root->LeftSubTree->RightSubTree in a Recursive Method
+4.1. **IterativePreOrder**. Traverse the Tree in the order: Root->LeftSubTree->RightSubTree but using an iterative method instead of Recursive
+5. **TraversePostOrder**. We Traverse the Tree in the order: LeftSubTree->RightSubTree->Root in a Recursive Method
+6. **getHeight**. We print the Height of Tree, Height is also known as Depth.
+
+
+
 **@TODO:** - more data structures to be added. 
