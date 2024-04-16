@@ -256,8 +256,8 @@ Lets consider:
 
 5. At each Height the max number of Nodes(*n*) is equals to -> $2^{\text{(h))}}-1$ -->
 
-Below are the operations performed on a DoubleEnded Queue:
-**We are using a Stack to perform Iterative Methods**
+Below are the operations performed on a Binary Tree:
+-- **We are using a Stack to perform Iterative Methods**
 
 1. **Constructor**. Constructing the BinaryTree - setting the Root as NULL
 2. **newNode**. Set the Root Node and child Nodes
