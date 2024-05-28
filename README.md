@@ -316,4 +316,51 @@ Below are the operations performed on the AVL Tree:
 
 
 
+## MaxHeap (Heap folder)
+
+A Heap is a complete binary tree that can be a Max-Heap or Min-Heap. In a Max-Heap, each node is greater than or equal to its children, ensuring that the largest element is at the root. This structure is useful for implementing priority queues and the Heap Sort algorithm.
+
+Below are the operations performed on a Max Binary Heap:
+
+1. **Constructor:** Initializes the heap with a specific size and inserts the elements.
+2. **Display:** Displays all elements of the heap.
+3. **Insert:** Inserts an element into the heap and adjusts to maintain the heap property.
+4. **DelMax:** Removes and returns the largest element from the heap (the root) and adjusts the heap structure.
+5. **Adjust:** Adjusts the position of an element to maintain the heap property.
+6. **Sort:** Sorts the elements of the heap using the Heap Sort algorithm.
+
+### Usage Example
+```cpp
+int main() {
+    try {
+        MaxHeap<int> h(5); // Creates a heap with 5 elements
+        cout << "\nBefore Sorting..." << endl;
+        h.Display(); // Displays the elements before sorting
+
+        cout << "\nAfter Sorting..." << endl;
+        h.Sort(); // Performs heap sort
+        h.Display(); // Displays the elements after sorting
+    } catch (char* c) {
+        cout << c; // Catches and displays exceptions
+    }
+    return 0;
+}
+```
+
+
+## Heap Sort Using Heapify (Heap Folder)
+
+### Description
+The `HeapifyTechnique.cpp` class implements heap sort using the heapify technique. This technique builds the heap in a bottom-up manner, ensuring the max-heap property is maintained. The class allows for sorting an array of elements by first transforming it into a max-heap and then repeatedly extracting the maximum element.
+
+
+Below are the operations performed on a Max Binary Heap using the Heapify technique:
+
+1. **Constructor:** Initializes the heap with a specific size and inserts the elements.
+2. **Display:** Displays all elements of the heap.
+3. **Heapifying:** Transforms the array into a max-heap.
+4. **DelMax:** Removes and returns the largest element from the heap (the root) and adjusts the heap structure.
+5. **Adjust:** Adjusts the position of an element to maintain the heap property.
+6. **Sort:** Sorts the elements of the heap using the Heap Sort algorithm.
+
 **@TODO:** - more data structures to be added 
