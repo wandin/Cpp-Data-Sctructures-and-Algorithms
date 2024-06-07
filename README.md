@@ -363,4 +363,43 @@ Below are the operations performed on a Max Binary Heap using the Heapify techni
 5. **Adjust:** Adjusts the position of an element to maintain the heap property.
 6. **Sort:** Sorts the elements of the heap using the Heap Sort algorithm.
 
+
+
+## Graphs (Graph folder) GraphADT.cpp (Within Graph folder)
+### Description
+This class implements a graph using an adjacency matrix in C++. It provides various methods to manipulate and query the graph.
+
+Operations on GraphADT
+
+1. **Constructor:** Initializes the graph with a given number of vertices and edges.
+2. **Destructor:** Cleans up the allocated memory for the adjacency matrix.
+3. **isEmpty:** Checks if the graph is empty.
+4. **NumberOfVertices:** Returns the number of vertices in the graph.
+5. **NumberOfEdges:** Returns the number of edges in the graph.
+6. **Degree:** Calculates the degree of a given vertex.
+7. **EdgeExists:** Checks if an edge exists between two given vertices.
+8. **InsertEdge:** Inserts an edge between two given vertices.
+9. **DeleteEdge:** Deletes an edge between two given vertices.
+10. **DisplayAdjMatrix:** Displays the adjacency matrix of the graph.
+
+
+## Graph BreathFirstSearch (GraphBFS.cpp Within Graph folder)
+### Description
+This class extends the graph implementation to include Breadth-First Search (BFS) using a queue in C++(located in graph folder as well).</br>
+It provides methods to perform BFS traversal of the graph.
+
+Operations on GraphBFS
+
+1. **Constructor:** Initializes the graph with a given number of vertices and edges.
+2. **Destructor:** Cleans up the allocated memory for the adjacency matrix and the visited array.
+3. **isEmpty:** Checks if the graph is empty.
+4. **NumberOfVertices:** Returns the number of vertices in the graph.
+5. **NumberOfEdges:** Returns the number of edges in the graph.
+6. **Degree:** Calculates the degree of a given vertex.
+7. **EdgeExists:** Checks if an edge exists between two given vertices.
+8. **InsertEdge:** Inserts an edge between two given vertices.
+9. **DeleteEdge:** Deletes an edge between two given vertices.
+10. **DisplayAdjMatrix:** Displays the adjacency matrix of the graph.
+11. **BFS:** Performs Breadth-First Search traversal starting from a given vertex.
+
 **@TODO:** - more data structures to be added 
