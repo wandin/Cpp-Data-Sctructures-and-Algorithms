@@ -562,5 +562,44 @@ The program outputs the array before and after sorting using `cout`.
 
 
 
+## Quick Sort (QuickSort.cpp Within Sorting folder)
+
+### Description
+This program implements the Quick Sort algorithm in C++ (located in the Sorting folder). It provides a method to sort an array of integers using the Quick Sort technique.
+
+### Operations on Quick Sort
+
+1. **swap Function:** 
+   - Description: Swaps two elements of type T using pointers.
+   - Implementation: Defined as a template function that takes pointers to elements and swaps their values.
+
+2. **Partition Function:** 
+   - Description: Partitions the array A[] based on a pivot element.
+   - Parameters: 
+     - `A[]`: Array to be partitioned.
+     - `low`: Lower index of the array or sub-array to be partitioned.
+     - `high`: Higher index of the array or sub-array to be partitioned.
+   - Returns: Index of the pivot element after partitioning.
+
+3. **QuickSort Function:** 
+   - Description: Recursively sorts the array A[] using the Quick Sort algorithm.
+   - Parameters: 
+     - `A[]`: Array to be sorted.
+     - `low`: Starting index of the array or sub-array to be sorted.
+     - `high`: Ending index of the array or sub-array to be sorted.
+
+4. **Display Function:** 
+   - Description: Displays the elements of array A[].
+   - Parameters: 
+     - `A[]`: Array to be displayed.
+     - `n`: Number of elements in the array.
+
+### Main Function
+The main function is the entry point of the program. It performs the following steps:
+- Initializes an array of integers with predefined values.
+- Prints the original array before sorting.
+- Executes the Quick Sort algorithm to sort the array.
+- Prints the sorted array after sorting.
+
 
 **@TODO:** - more data structures to be added 
