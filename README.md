@@ -383,7 +383,7 @@ Operations on GraphADT
 10. **DisplayAdjMatrix:** Displays the adjacency matrix of the graph.
 
 
-## Graph BreathFirstSearch (GraphBFS.cpp Within Graph folder)
+## Graph Breath First Search (GraphBFS.cpp Within Graph folder)
 ### Description
 This class extends the graph implementation to include Breadth-First Search (BFS) using a queue in C++(located in graph folder as well).</br>
 It provides methods to perform BFS traversal of the graph.
@@ -401,5 +401,34 @@ Operations on GraphBFS
 9. **DeleteEdge:** Deletes an edge between two given vertices.
 10. **DisplayAdjMatrix:** Displays the adjacency matrix of the graph.
 11. **BFS:** Performs Breadth-First Search traversal starting from a given vertex.
+
+
+
+## Graph Depth First Search (GraphDFS.cpp Within Graph folder)
+### Description
+This class extends the graph implementation to include Depth-First Search (DFS) in C++ (located in the graph folder as well).</br>
+It provides methods to perform DFS traversal of the graph.
+
+Operations on GraphDFS
+
+1. **Constructor:** Initializes the graph with a given number of vertices and edges.
+2. **Destructor:** Cleans up the allocated memory for the adjacency matrix and the visited array.
+3. **isEmpty:** Checks if the graph is empty.
+4. **NumberOfVertices:** Returns the number of vertices in the graph.
+5. **NumberOfEdges:** Returns the number of edges in the graph.
+6. **Degree:** Calculates the degree of a given vertex.
+7. **EdgeExists:** Checks if an edge exists between two given vertices.
+8. **InsertEdge:** Inserts an edge between two given vertices.
+9. **DeleteEdge:** Deletes an edge between two given vertices.
+10. **DisplayAdjMatrix:** Displays the adjacency matrix of the graph.
+11. **DFS:** Performs Depth-First Search traversal starting from a given vertex.
+
+
+
+
+
+
+
+
 
 **@TODO:** - more data structures to be added 
