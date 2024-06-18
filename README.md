@@ -527,6 +527,40 @@ The Selection Sort algorithm sorts the array in ascending order. It works by rep
 The program outputs the array before and after sorting using `cout`.
 
 
+## Merge Sort (MergeSort.cpp Within Sorting folder)
+### Description
+This program implements the Merge Sort algorithm in C++ (located in the Sorting folder).</br>
+It provides a method to sort an array of integers using the Merge Sort technique.
+
+### Operations on Merge Sort
+
+1. **Main Function:** Executes the Merge Sort algorithm.
+2. **User Input:** The array size and elements are entered by the user.
+3. **Merge Sort Functionality:** Performs Merge Sort on the array.
+4. **Output:** Displays the original and sorted arrays.
+
+### Main Function
+The main function is the entry point of the program. It performs the following steps:
+- Prompts the user to enter the size of the array and its elements.
+- Prints the original array.
+- Executes the Merge Sort algorithm to sort the array.
+- Prints the sorted array.
+
+### User Input
+The user is prompted to enter:
+- The size of the array.
+- The elements of the array.
+
+### Merge Sort Functionality
+The Merge Sort algorithm sorts the array in ascending order by:
+- Dividing the array into two halves recursively.
+- Sorting each half recursively using Merge Sort.
+- Merging the sorted halves to produce the sorted array.
+
+### Output
+The program outputs the array before and after sorting using `cout`.
+
+
 
 
 **@TODO:** - more data structures to be added 
