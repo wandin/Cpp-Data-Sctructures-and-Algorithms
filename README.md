@@ -425,8 +425,106 @@ Operations on GraphDFS
 
 
 
+## Bubble Sort (BubbleSort.cpp Within Sorting folder)
+### Description
+This program implements the Bubble Sort algorithm in C++ (located in the Sorting folder).</br>
+It provides a simple method to sort an array of integers using the Bubble Sort technique.
+
+Operations on BubbleSort
+
+1. **Main Function:** Executes the Bubble Sort algorithm.
+2. **User Input:** Prompts the user to enter the number of elements and the elements themselves.
+3. **BubbleSort:** Performs Bubble Sort on the array.
+4. **Output:** Displays the sorted array.
+
+### Main Function
+The main function is the entry point of the program. It performs the following steps:
+- Prompts the user to enter the number of elements to be sorted.
+- Prompts the user to enter the elements of the array.
+- Executes the Bubble Sort algorithm to sort the array.
+- Displays the sorted array.
+
+### User Input
+The program uses `cin` to take input from the user:
+- The number of elements (`numOfElements`).
+- The elements of the array (`a[20]`).
+
+### BubbleSort
+The Bubble Sort algorithm sorts the array in ascending order. It works by repeatedly swapping adjacent elements if they are in the wrong order:
+- Outer loop iterates over the entire array.
+- Inner loop compares adjacent elements and swaps them if necessary.
+
+### Output
+The program outputs the sorted array using `cout`.
 
 
+
+
+## Insertion Sort (InsertionSort.cpp Within Sorting folder)
+### Description
+This program implements the Insertion Sort algorithm in C++ (located in the Sorting folder).</br>
+It provides a method to sort an array of elements using the Insertion Sort technique.
+
+Operations on InsertionSort
+
+1. **Main Function:** Executes the Insertion Sort algorithm.
+2. **User Input:** Prompts the user to enter the elements of the array.
+3. **InsertionSort:** Performs Insertion Sort on the array.
+4. **Output:** Displays the array before and after sorting.
+
+### Main Function
+The main function is the entry point of the program. It performs the following steps:
+- Creates an `InsertionSort` object with a given number of elements.
+- Prompts the user to enter the elements of the array.
+- Displays the array before sorting.
+- Executes the Insertion Sort algorithm to sort the array.
+- Displays the array after sorting.
+
+### User Input
+The program uses `cin` to take input from the user:
+- The elements of the array.
+
+### InsertionSort
+The Insertion Sort algorithm sorts the array in ascending order. It works by repeatedly inserting an element into the sorted part of the array:
+- Reads the elements into the array.
+- Inserts each element into its correct position in the sorted part of the array.
+- Displays the sorted array.
+
+### Output
+The program outputs the array before and after sorting using `cout`.
+
+
+
+## Selection Sort (SelectionSort.cpp Within Sorting folder)
+### Description
+This program implements the Selection Sort algorithm in C++ (located in the Sorting folder).</br>
+It provides a method to sort an array of integers using the Selection Sort technique.
+
+Operations on SelectionSort
+
+1. **Main Function:** Executes the Selection Sort algorithm.
+2. **User Input:** The array is predefined in the code.
+3. **SelectionSort:** Performs Selection Sort on the array.
+4. **Output:** Displays the original and sorted arrays.
+
+### Main Function
+The main function is the entry point of the program. It performs the following steps:
+- Defines an array of integers to be sorted.
+- Prints the original array.
+- Executes the Selection Sort algorithm to sort the array.
+- Prints the sorted array.
+
+### User Input
+The array to be sorted is predefined within the code. There is no user input for the array elements.
+
+### SelectionSort
+The Selection Sort algorithm sorts the array in ascending order. It works by repeatedly finding the minimum element from the unsorted part of the array and swapping it with the first unsorted element:
+- Finds the minimum element in the unsorted part of the array.
+- Swaps it with the first element of the unsorted part.
+- Repeats the process for the remaining unsorted part of the array.
+
+### Output
+The program outputs the array before and after sorting using `cout`.
 
 
 
