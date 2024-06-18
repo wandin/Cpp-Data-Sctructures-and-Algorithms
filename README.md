@@ -602,4 +602,28 @@ The main function is the entry point of the program. It performs the following s
 - Prints the sorted array after sorting.
 
 
+## Shell Sort (ShellSort.cpp Within Sorting folder)
+
+### Description
+This program implements the Shell Sort algorithm in C++ (located in the Sorting folder). It provides a method to sort an array of integers using the Shell Sort technique.
+
+### Operations on Shell Sort
+
+1. **ShellSort Function:** 
+   - Description: Sorts the array a[] using Shell Sort with specified increments b[].
+   - Parameters: 
+     - `a[]`: Array to be sorted.
+     - `b[]`: Array of increments for Shell Sort.
+     - `d`: Number of elements in array `a[]`.
+     - `x`: Number of elements in array `b[]`.
+
+### Main Function
+The main function is the entry point of the program. It performs the following steps:
+- Prompts the user to enter the dimension of the array and its elements.
+- Prompts the user to enter the number of increments and the increments themselves.
+- Prints the original array before sorting.
+- Executes the Shell Sort algorithm to sort the array.
+- Prints the sorted array after sorting.
+
+
 **@TODO:** - more data structures to be added 
