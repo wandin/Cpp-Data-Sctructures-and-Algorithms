@@ -761,4 +761,122 @@ To use this program:
 
 
 
-**@TODO:** - more data structures to be added 
+# Hashing (Hashing.cpp Within Sorting Folder)
+
+## Description
+This program implements a Hashing technique with linear probing in C++ (located in the Sorting folder). It provides methods to insert, delete, search, and display elements in a hash table using linear probing to handle collisions.
+
+## Operations on Hashing
+
+### HashFunction
+- **Description:** Computes the hash index for a given key using the modulus operator.
+- **Parameters:**
+    - `k`: Key for which the hash index is to be computed.
+- **Returns:** The hash index for the key `k`.
+
+### Insert Function
+- **Description:** Inserts an element into the hash table.
+- **Parameters:**
+    - `e`: Element to be inserted into the hash table.
+- **Returns:** The current hash table object after insertion.
+
+### Delete Function
+- **Description:** Deletes an element from the hash table.
+- **Parameters:**
+    - `e`: Element to be deleted from the hash table.
+
+### Search Function
+- **Description:** Searches for an element in the hash table.
+- **Parameters:**
+    - `k`: Key to be searched in the hash table.
+    - `e`: Element found at the hash index.
+- **Returns:** 1 if the element is found, 0 otherwise.
+
+### Display Function
+- **Description:** Displays the elements of the hash table.
+- **Parameters:**
+    - None
+
+## Main Function
+The main function is the entry point of the program. It performs the following steps:
+- Initializes the hash table with a given size.
+- Inserts predefined elements into the hash table.
+- Displays the hash table after each operation (insertion, deletion).
+- Attempts to delete a non-existent element to demonstrate the handling of such cases.
+- Inserts additional elements to show the process of handling collisions and the use of linear probing.
+- Displays the hash table after all operations.
+
+## Usage
+To use this program:
+1. Compile the `Hashing.cpp` file.
+2. Run the executable.
+3. The program will display the hash table after various operations such as insertion, deletion, and search.
+
+## Notes
+- This implementation uses linear probing to handle collisions. When the computed hash index is already occupied, the program linearly probes the next indices to find an empty slot.
+- The hash table size is set to 11 by default, but it can be adjusted as needed. The hash function uses the modulus operator to compute the hash index.
+
+# Hashing with Chaining (HashingChaining.cpp Within Sorting Folder)
+
+## Description
+This program implements the Hashing with Chaining technique in C++ (located in the Sorting folder). It provides a method to manage a hash table where collisions are handled using linked lists (chaining).
+
+## Operations on Hashing with Chaining
+
+### Node Structure
+- **Description:** Represents a key-value pair in the hash table.
+- **Members:**
+    - `key`: The key of the node.
+    - `value`: The value associated with the key.
+    - `next`: Pointer to the next node in the linked list.
+
+### HashTable Class
+- **Description:** Implements a hash table using the chaining technique for collision handling.
+- **Members:**
+    - `table`: A vector of pointers to `Node`, representing the hash table.
+    - `size`: The size of the hash table.
+    - `Hash(int key)`: A private method that calculates the hash index for a given key.
+
+### HashTable Constructor
+- **Description:** Initializes the hash table with a given size.
+- **Parameters:**
+    - `sz`: The size of the hash table.
+
+### HashTable Destructor
+- **Description:** Cleans up the dynamically allocated memory for the hash table.
+
+### Insert Function
+- **Description:** Inserts a key-value pair into the hash table.
+- **Parameters:**
+    - `key`: The key to be inserted.
+    - `value`: The value associated with the key.
+
+### Search Function
+- **Description:** Searches for a key in the hash table and returns its value.
+- **Parameters:**
+    - `key`: The key to be searched.
+- **Returns:** The value associated with the key if found, otherwise returns `-1`.
+
+### Remove Function
+- **Description:** Removes a key from the hash table.
+- **Parameters:**
+    - `key`: The key to be removed.
+
+### Main Function
+The main function is the entry point of the program. It performs the following steps:
+- Creates a hash table with a predefined size.
+- Inserts some key-value pairs into the hash table.
+- Searches for a key and displays its value if found.
+- Removes a key from the hash table.
+- Searches for the key again after removal to verify it has been deleted.
+- Displays appropriate messages based on the search results.
+
+## Usage
+To use this program:
+1. Compile the `HashingChaining.cpp` file.
+2. Run the executable.
+3. The program will insert, search, and remove keys in the hash table, displaying the results of these operations.
+
+## Notes
+- This implementation uses chaining to handle collisions in the hash table. Each index in the hash table's array points to the head of a linked list containing all key-value pairs that hash to that index.
+- Ensure to delete the dynamically allocated memory in the destructor to avoid memory leaks.
