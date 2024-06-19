@@ -626,4 +626,139 @@ The main function is the entry point of the program. It performs the following s
 - Prints the sorted array after sorting.
 
 
+# Counting Sort (CountingSort.cpp Within Sorting Folder)
+
+## Description
+This program implements the Counting Sort algorithm in C++ (located in the Sorting folder). It provides a method to sort an array of integers using the Counting Sort technique.
+
+## Operations on Counting Sort
+
+### Display Function
+- **Description:** Displays the elements of the array.
+- **Parameters:**
+    - `A[]`: Array whose elements are to be displayed.
+    - `n`: Number of elements in the array `A[]`.
+
+### GetMax Function
+- **Description:** Finds the maximum value in the array.
+- **Parameters:**
+    - `A[]`: Array whose maximum value is to be found.
+    - `n`: Number of elements in the array `A[]`.
+- **Returns:** The maximum value in the array `A[]`.
+
+### CountSort Function
+- **Description:** Sorts the array `A[]` using the Counting Sort algorithm.
+- **Parameters:**
+    - `A[]`: Array to be sorted.
+    - `n`: Number of elements in the array `A[]`.
+
+## Main Function
+The main function is the entry point of the program. It performs the following steps:
+- Initializes the array `A[]` with predefined elements.
+- Calculates the size of the array `A[]`.
+- Prints the original array before sorting.
+- Executes the Counting Sort algorithm to sort the array.
+- Prints the sorted array after sorting.
+
+
+# Bucket Sort (BucketSort.cpp Within Sorting Folder)
+
+## Description
+This program implements the Bucket Sort algorithm in C++ (located in the Sorting folder). It provides a method to sort an array of integers using the Bucket Sort technique.
+
+## Operations on Bucket Sort
+
+### Display Function
+- **Description:** Displays the elements of the array.
+- **Parameters:**
+    - `A[]`: Array whose elements are to be displayed.
+    - `n`: Number of elements in the array `A[]`.
+
+### GetMax Function
+- **Description:** Finds the maximum value in the array.
+- **Parameters:**
+    - `A[]`: Array whose maximum value is to be found.
+    - `n`: Number of elements in the array `A[]`.
+- **Returns:** The maximum value in the array `A[]`.
+
+### Insert Function
+- **Description:** Inserts a value into the bucket at the specified index.
+- **Parameters:**
+    - `ptrBucket`: Array of bucket pointers.
+    - `index`: Index at which the value should be inserted.
+
+### Delete Function
+- **Description:** Deletes a value from the bucket at the specified index and returns the deleted value.
+- **Parameters:**
+    - `ptrBucket`: Array of bucket pointers.
+    - `index`: Index at which the value should be deleted.
+- **Returns:** The deleted value.
+
+### BucketSort Function
+- **Description:** Sorts the array `A[]` using the Bucket Sort algorithm.
+- **Parameters:**
+    - `A[]`: Array to be sorted.
+    - `n`: Number of elements in the array `A[]`.
+
+## Main Function
+The main function is the entry point of the program. It performs the following steps:
+- Initializes the array `A[]` with predefined elements.
+- Calculates the size of the array `A[]`.
+- Prints the original array before sorting.
+- Executes the Bucket Sort algorithm to sort the array.
+- Prints the sorted array after sorting.
+
+
+# Radix Sort (RadixSort.cpp Within Sorting Folder)
+
+## Description
+This program implements the Radix Sort algorithm in C++ (located in the Sorting folder). It provides a method to sort an array of integers using the Radix Sort technique, primarily focusing on sorting based on decimal digits.
+
+## Operations on Radix Sort
+
+### GetMax Function
+- **Description:** Finds the maximum value in the array.
+- **Parameters:**
+    - `array[]`: Array whose maximum value is to be found.
+    - `n`: Number of elements in the array `array[]`.
+- **Returns:** The maximum value in the array `array[]`.
+
+### CountingSort Function
+- **Description:** Sorts the array `array[]` using the Counting Sort algorithm based on the digit represented by `place`.
+- **Parameters:**
+    - `array[]`: Array to be sorted.
+    - `size`: Number of elements in the array `array[]`.
+    - `place`: Represents the digit place value (1 for units, 10 for tens, 100 for hundreds, etc.).
+
+### RadixSort Function
+- **Description:** Performs Radix Sort on the array `array[]`.
+- **Parameters:**
+    - `array[]`: Array to be sorted.
+    - `size`: Number of elements in the array `array[]`.
+
+### Display Function
+- **Description:** Displays the elements of the array.
+- **Parameters:**
+    - `array[]`: Array whose elements are to be displayed.
+    - `size`: Number of elements in the array `array[]`.
+
+## Main Function
+The main function is the entry point of the program. It performs the following steps:
+- Initializes the array `array[]` with predefined elements.
+- Calculates the size of the array `array[]`.
+- Prints the original array before sorting.
+- Executes the Radix Sort algorithm to sort the array based on decimal digits.
+- Prints the sorted array after sorting.
+
+## Usage
+To use this program:
+1. Compile the `RadixSort.cpp` file.
+2. Run the executable.
+3. The program will display the array before and after sorting using Radix Sort.
+
+## Notes
+- The Radix Sort implemented in this program focuses on sorting based on decimal digits (base 10). For other bases such as binary, octal, or hexadecimal, modify the `CountingSort` function by adjusting the modulus operation accordingly.
+
+
+
 **@TODO:** - more data structures to be added 
